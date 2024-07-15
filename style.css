@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+
+
+
+
+
+.container {
+    display: grid;
+    grid-template-rows: 140px 492px 176px 1fr;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head > h1 {
+    color: #F06F6F;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.gameArea {
+    display: flex;
+    justify-content: center;
+}
+
+.gameboard {
+    width: 492px;
+    height: 492px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.area {
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-turn {
+    border-radius: 5px;
+    background: #F0A8A8;
+    display: flex;
+    width: 300px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #020202;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+.buttons > button {
+    display: flex;
+    width: 168px;
+    height: 62px;
+    padding: 12px 47px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #1E3A8A;
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttons > #message {
+    font-size: 1rem;
+}
